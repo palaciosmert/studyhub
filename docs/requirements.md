@@ -156,3 +156,24 @@
 | NFR-08 | Performance | Every page shall load in under 2 seconds on a local machine. |
 | NFR-09 | Maintainability | The README shall include step-by-step instructions to install and run the project. |
 | NFR-10 | Maintainability | The code shall follow the PEP 8 style guide. |
+
+
+
+## 4. MVP Scope (MoSCoW)
+
+| Story | Title | Priority |
+|-------|-------|----------|
+| US-01 | Create an account | Must |
+| US-02 | Log in | Must |
+| US-03 | Log out | Must |
+| US-04 | Add a course | Must |
+| US-05 | View my courses | Must |
+| US-06 | Edit a course | Could |
+| US-07 | Delete a course | Should |
+| US-08 | Add a task to a course | Must |
+| US-09 | Set a due date for a task | Must |
+| US-10 | Update the status of a task | Must |
+| US-11 | Edit a task | Should |
+| US-12 | Delete a task | Should |
+| US-13 | See upcoming deadlines | Must |
+| US-14 | Notice overdue tasks | Should |
