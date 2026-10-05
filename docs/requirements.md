@@ -117,3 +117,42 @@
 **Acceptance criteria:**
 - Unfinished tasks with a past due date are highlighted (e.g. in red).
 - Overdue tasks are listed at the top of the dashboard.
+
+
+## 2. Functional Requirements
+
+| ID | Requirement | Related Story |
+|----|-------------|---------------|
+| FR-01 | The system shall allow a user to register with a username, email and password. | US-01 |
+| FR-02 | The system shall reject registration if the email is already in use. | US-01 |
+| FR-03 | The system shall allow a registered user to log in with their email and password. | US-02 |
+| FR-04 | The system shall display an error message when login credentials are incorrect. | US-02 |
+| FR-05 | The system shall redirect users who are not logged in to the login page when they try to open a protected page. | US-02 |
+| FR-06 | The system shall allow a logged-in user to log out. | US-03 |
+| FR-07 | The system shall allow a user to create a course by entering a course name. | US-04 |
+| FR-08 | The system shall display a list of the user's courses with the number of unfinished tasks in each course. | US-05 |
+| FR-09 | The system shall allow a user to rename a course. | US-06 |
+| FR-10 | The system shall ask for confirmation before deleting a course or a task. | US-07, US-12 |
+| FR-11 | The system shall delete all tasks of a course when the course is deleted. | US-07 |
+| FR-12 | The system shall allow a user to create a task with a title, type (assignment, project or exam) and due date. | US-08, US-09 |
+| FR-13 | The system shall reject a task if its title or due date is empty. | US-08, US-09 |
+| FR-14 | The system shall assign the status "To do" to every new task. | US-10 |
+| FR-15 | The system shall allow a user to change a task's status to "To do", "In progress" or "Done". | US-10 |
+| FR-16 | The system shall allow a user to edit and delete a task. | US-11, US-12 |
+| FR-17 | The system shall display all unfinished tasks from all courses on the dashboard, sorted by due date. | US-13 |
+| FR-18 | The system shall highlight unfinished tasks whose due date has passed and list them at the top of the dashboard. | US-14 |
+
+## 3. Non-Functional Requirements
+
+| ID | Category | Requirement |
+|----|----------|-------------|
+| NFR-01 | Security | User passwords shall be stored as hashes, never as plain text. |
+| NFR-02 | Security | A user shall only be able to view, edit or delete their own courses and tasks. |
+| NFR-03 | Security | Secret keys and configuration values shall not be stored in the Git repository. |
+| NFR-04 | Usability | Every form shall display a clear error message next to the invalid field. |
+| NFR-05 | Usability | A new user shall be able to register and add their first course within 2 minutes without help. |
+| NFR-06 | Compatibility | The application shall work on the latest versions of Chrome, Firefox and Safari. |
+| NFR-07 | Compatibility | All pages shall be usable on screens 375px wide or wider (mobile phones). |
+| NFR-08 | Performance | Every page shall load in under 2 seconds on a local machine. |
+| NFR-09 | Maintainability | The README shall include step-by-step instructions to install and run the project. |
+| NFR-10 | Maintainability | The code shall follow the PEP 8 style guide. |
